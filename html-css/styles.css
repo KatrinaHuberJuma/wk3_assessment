@@ -1,0 +1,10 @@
+.yellowed {
+    background-color:  #ffffcc;
+    border-radius: 5px;
+}
+.instructions {
+    border: 1px solid blue;
+}
+#bolded {
+    font-weight: bold;
+}

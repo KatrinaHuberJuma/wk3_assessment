@@ -1,0 +1,44 @@
+<!-- A form that asks the user:
+            their first and last name (as separate fields),
+            their salary requirement as a number, and
+            which job they are applying for, from a list of:
+                Software Engineer
+                QA Engineer
+                Product Manager
+The form should also have a submit button that submits the form to the URL path /application-success. This should be a POST request. (For now, just focus on the HTML requirements for this request. Don’t build a Flask route, yet.)
+The page should have a large heading and some explanatory text, as well.
+
+Open the CSS file, styles.css, and use this to stylize the HTML file, application-form.html.
+
+First, edit the HTML file to reference the CSS file. Then, complete each of the following styles using CSS:
+
+            Change the background color of all of the form input boxes and submit button to be yellow. (Can you do this for all input boxes without having to stylize each one independently?)
+            Change the text in the last name field to be bold.
+            Draw a border around the instruction text.
+ -->
+<!doctype html>
+<html>
+<head>
+    <title>Application Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<h1>Inert HTML Form</h1>
+<p>This is a very boring form that does nothing except prove that I can write basic HTML.
+I don&#39;t know what else there is to explain here.</p>
+
+<form action="/nowhere" method="post">
+    <span class="instructions">First name:</span> <input class="yellowed" type="text" name="firstname" placeholder="your first name"><br>
+    <span class="instructions" id="bolded">Last name:</span> <input class="yellowed" type="text" name="lastname" placeholder="your last name"><br>
+    <span class="instructions">Salary Requirements:</span> <input class="yellowed" type="number" name="salary"><br>
+    <span class="instructions">Job title:</span> <select name="job">
+                    <option value="software">Software Engineer</option>
+                    <option value="qa">QA Engineer</option>
+                    <option value="manager">Product Manager</option>
+               </select>
+    <input class="yellowed" type="submit">
+</form>
+
+</body>
+</html>
