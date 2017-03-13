@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block everything %}
+<h1 class="borg">Assimilation begins:</h1>
+<p>Come work for Ubermelon, <span class="borg">RESISTANCE IS FUTILE!</span></p>
+<h1>...I mean we have <em>cookies</em>!</h1>
+<br>
+
+<form action="/application-response" method="POST">
+    First name: <input class="form-input" type="text" name="firstname" placeholder="your first name"><br>
+    Last name: <input class="form-input" type="text" name="lastname" placeholder="your last name"><br>
+    Salary Requirements: <input class="form-input" type="number" name="salary"><br>
+    Job title: <select class="form-input" name="job">
+                    {% for job in jobs %}
+                    <option value="{{ job }}">{{ job }}</option>
+                    {% endfor %}
+               </select>
+    <input class="form-input sub-button" type="submit">
+</form>
+
+{% endblock %}

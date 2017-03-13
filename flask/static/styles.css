@@ -1,1 +1,32 @@
-/* Your styles can go here. */
+h1 {
+    font-family: 'Aclonica', sans-serif;
+}
+
+.borg {
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+.form-input {
+    background-color:  #e6ffff;
+    border-radius: 5px;
+    margin: 5px;
+}
+.sub-button {
+    background-color: #00cc99;
+    box-shadow: 5px 5px 10px #d6d6d6;
+}
+.picture {
+    width: 100%;
+    border-radius: 10px;
+}
+.container-fluid {
+    padding: 0;
+}
+.container {
+    background-color:  #fff2e6;
+    padding: 20px;
+    border-radius: 10px;
+}
+.glyphicon {
+    padding-left: 20px;
+}

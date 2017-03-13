@@ -1,11 +1,9 @@
-<!doctype html>
-<html>
-<head>
-    <title>Sample Home Page</title>
-</head>
+{% extends "base.html" %}
+
+{% block everything %}
 <body>
 
-<h1>This is the sample home page.</h1>
+<h1>Welcome Home!</h1>
+<a href="/application-form">Go to the form</a>
 
-</body>
-</html>
+{% endblock %}

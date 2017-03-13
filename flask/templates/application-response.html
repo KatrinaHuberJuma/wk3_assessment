@@ -1,11 +1,10 @@
-<!doctype html>
-<html>
-<head>
-    <title>Application Response</title>
-</head>
+{% extends "base.html" %}
+
+{% block everything %}
 <body>
 
-<!-- fill this in -->
+<h1>Application response</h1>
+<p>Dearest {{ firstname }} {{ lastname}}, we would be thrilled to pay you {{ salary }} to be our {{ job }}!</p>
+<p>Also, help yourself to some cookies!</p>
 
-</body>
-</html>
+{% endblock %}
